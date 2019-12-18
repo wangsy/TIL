@@ -15,4 +15,19 @@ Today I Learned
 
 https://ruby-doc.org/core-2.6/String.html#method-i-25
 
+## Ruby 
+
+ruby 에서 `attr_accessor` 지정해 주면, instance variable 이 method 처럼 호출 될 수 있게 된다.
+
+```
+    attr_accessor :value
+    def initialize(automobile)
+      @value = value
+    end
+
+    def call
+      value
+    end
+```
+
 [2019 12-18](/2019/20191218.md)
